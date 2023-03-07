@@ -1,0 +1,32 @@
+mysql:
+  host: 124.222.182.66
+  port: 3306
+  dbname: douyin
+  username: root
+  password: Wqx1761391865.
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  Password:
+  database: 0
+
+nacos:
+  host: 127.0.0.1
+  port: 8848
+
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+
+cas:
+  enable: true
+  loginUrl: /api/cas/login
+  ignorePattern: /api/cas/call-back|/api/cas/login|/api/swagger.*|/api/webjar.*|/api/v2.*|/show/*
+  serverUrlPrefix: https://auth.seu.edu.cn/cas
+  serverLoginUrl: https://auth.seu.edu.cn/dist/#/dist/main/login
+  serverLogoutUrl: https://auth.seu.edu.cn/dist/#/dist/logOut?redirectUrl=https://matrix.seu.edu.cn/
+  clientHostUrl: https://matrix.seu.edu.cn
+  callBackUrl: https://matrix.seu.edu.cn/api/cas/call-back?url=
